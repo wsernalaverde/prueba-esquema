@@ -93,6 +93,13 @@ a{
     font-weight: 700;
     border: 3px solid;
     padding: 17px 60px;
+    transition: 0.3s;
+}
+
+.btn-slide:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.19);
+    text-decoration: none;
 }
 
 .section-divider{
@@ -159,7 +166,7 @@ a{
 }
 
 .cont-menu-services{
-    background-image: url('./bg-menu-services.jpg');
+    background-image: url('./assets/img/bg-menu-services.jpg');
     background-size: cover;
     width: 100%;
     display: flex;
@@ -418,6 +425,7 @@ a{
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     bottom: -10px;
+    transition: 0.3s;
 }
 
 .cont-likes{
@@ -425,6 +433,7 @@ a{
     top: 10px;
     right: 10px;
     text-align: center;
+    transition: 0.3s;
 }
 
 .cont-likes p{
@@ -439,6 +448,86 @@ a{
     font-size: 26px;
     padding: 7px 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.48);
+}
+
+.cont-item-portfolio:hover .cont-overlayp{
+    opacity: 1;
+}
+
+.cont-item-portfolio:hover .cont-likes, .cont-item-portfolio:hover::after{
+    opacity: 0;   
+}
+
+.cont-overlayp{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.cont-info-portfolio{
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-info-portfolio p{
+    font-size: 13px;
+    color: white;
+    line-height: 17px;
+    margin: 0;
+}
+
+.cont-info-portfolio p span{
+    color:#5CC9C1;
+}
+
+.cont-icon-portfolio{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 5px;
+}
+
+.cont-icon-portfolio a{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.title-portfolio{
+    color: white;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    margin: 0 0 5px;
+    padding-bottom: 15px;
+}
+
+.title-portfolio:after{
+    content: "";
+    border-bottom: 2px dotted #5CCAC1;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
 }
 
 footer{
@@ -545,8 +634,114 @@ footer{
     padding: 5px 20px;
     cursor: pointer;
 }
-
 	
 .form-cta ::placeholder{
      color: #ececec; 
+}
+
+@media (max-width: 990px){
+   .cont-info-seccion{
+      padding: 60px 20px 20px;
+    }
+    .cont-info-about{
+        flex-wrap:wrap;
+        padding: 20px 0 100px;
+    }
+    .cont-date{
+        width: 100%;
+        flex: initial;
+        padding: 0px 20px;
+        margin: 0 0 50px;
+        align-items: center;
+    }
+    .description-about{
+        flex: initial;
+        width: 100%;
+    }
+    .header-section{
+        min-height: 480px;
+        background-image: url('./assets/img/slide1.jpg')
+    }
+    .cont-img-slide{
+      display: none;
+    }
+}
+
+@media (max-width: 660px) {
+  .cont-info-contact{
+     flex-wrap: wrap;
+     padding: 0 30px;
+  }
+  .cont-item-contact{
+      width: 100%;
+      flex:initial;
+  }
+  .cont-items-form{
+      flex-wrap: wrap;
+      margin: 0;
+  }
+  .form-cta input[type="text"], .form-cta input[type="email"], .form-cta input[type="number"], textarea{
+      margin: 10px 20px;
+  }
+  .cont-info-about{
+        padding: 20px 30px 100px;
+  }
+  .cont-items-portfolio{
+      flex-wrap: wrap;
+  }
+  .cont-item-portfolio{
+      max-width: 100%;
+      width: 100%;
+  }
+  .cont-menu-services .nav-tabs .nav-link span{
+      display: none;
+  }
+  .cont-menu-services .nav-tabs .nav-link{
+      min-width: auto;
+      margin: 0;
+      padding: 10px;
+      font-size: 16px;
+  }
+  .cont-menu-services .cont-overlay{
+      display: none;
+  }
+  .cont-info-slide p{
+      margin: 60px 60px 30px;
+  }
+  .btn-slide{
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 460px){
+    .cont-panels-services{
+        padding: 70px 30px;
+    }
+    .title-section{
+        font-size: 36px;
+    }
+    .title-section:before{
+       bottom: -64px;
+   }
+}
+
+@media (max-width: 400px){
+ 
+   .cont-menu-services .nav-tabs .nav-link {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 360px){
+    .cont-logo{
+        width: 230px;
+    }
+    .cont-logo h1{
+        font-size: 46px;
+    }
+    .cont-logo h3{
+        font-size: 19px;
+    }
 }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Prueba Esquema</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel='stylesheet' href='./font/typicons.min.css' />
         <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="cont-img-slide">
-                        <img src="slide1.jpg" style="width:100%;">
+                        <img src="./assets/img/slide1.jpg" style="width:100%;">
                     </div>  
                     <div class="cont-info-slide">
                         <div class="cont-logo">
@@ -87,7 +88,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic voluptatem voluptates consectetur nisi eligendi
                                  voluptatibus cupiditate dolorum vitae in fuga vero, similique quasi distinctio tempore ad neque nam unde!</p>
                             </div>
-                            <a class="btn-more" data-toggle="collapse" href="#moremarketing" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>           
+                            <a class="btn-more collapsed" data-toggle="collapse" href="#moremarketing" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>           
                         </div>
                         <div class="tab-pane fade" id="advertising" role="tabpanel" aria-labelledby="advertising">
                             <h3 class="title-second">Advertising<span class="typcn typcn-plane"></span></h3>
@@ -102,7 +103,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic voluptatem voluptates consectetur nisi eligendi
                                  voluptatibus cupiditate dolorum vitae in fuga vero, similique quasi distinctio tempore ad neque nam unde!</p>
                             </div>
-                            <a class="btn-more" data-toggle="collapse" href="#moreadvertising" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
+                            <a class="btn-more collapsed" data-toggle="collapse" href="#moreadvertising" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
                         </div>
                          <div class="tab-pane fade" id="storage" role="tabpanel" aria-labelledby="storage">
                             <h3 class="title-second">Cloud Storage<span class="typcn typcn-weather-cloudy"></span></h3>
@@ -117,7 +118,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic voluptatem voluptates consectetur nisi eligendi
                                  voluptatibus cupiditate dolorum vitae in fuga vero, similique quasi distinctio tempore ad neque nam unde!</p>
                             </div>
-                            <a class="btn-more" data-toggle="collapse" href="#morestorage" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
+                            <a class="btn-more collapsed" data-toggle="collapse" href="#morestorage" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
                         </div>
                          <div class="tab-pane fade" id="consulting" role="tabpanel" aria-labelledby="consulting">
                             <h3 class="title-second">Consulting<span class="typcn typcn-group"></span></h3>
@@ -132,7 +133,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic voluptatem voluptates consectetur nisi eligendi
                                  voluptatibus cupiditate dolorum vitae in fuga vero, similique quasi distinctio tempore ad neque nam unde!</p>
                             </div>
-                            <a class="btn-more" data-toggle="collapse" href="#moreconsulting" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
+                            <a class="btn-more collapsed" data-toggle="collapse" href="#moreconsulting" aria-expanded="false"> <span class="typcn typcn-chevron-right"></span></a>
                         </div>
 
                     </div>
@@ -226,65 +227,175 @@
                         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port1.jpg" alt="">
+                                     <img src="./assets/img/port1.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port2.jpg" alt="">
+                                     <img src="./assets/img/port2.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port3.jpg" alt="">
+                                     <img src="./assets/img/port3.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port4.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port5.jpg" alt="">
+                                     <img src="./assets/img/port4.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port5.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
                              <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port6.jpg" alt="">
+                                     <img src="./assets/img/port6.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port11.jpg" alt="">
+                                     <img src="./assets/img/port11.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port7.jpg" alt="">
+                                     <img src="./assets/img/port7.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port8.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port9.jpg" alt="">
+                                     <img src="./assets/img/port8.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port9.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>     
@@ -292,33 +403,88 @@
                         <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="photography">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port1.jpg" alt="">
+                                     <img src="./assets/img/port1.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port2.jpg" alt="">
+                                     <img src="./assets/img/port2.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port3.jpg" alt="">
+                                     <img src="./assets/img/port3.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port4.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port5.jpg" alt="">
+                                     <img src="./assets/img/port4.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port5.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
@@ -326,47 +492,124 @@
                         <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port6.jpg" alt="">
+                                     <img src="./assets/img/port6.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port11.jpg" alt="">
+                                     <img src="./assets/img/port11.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port7.jpg" alt="">
+                                     <img src="./assets/img/port7.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port8.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port9.jpg" alt="">
+                                     <img src="./assets/img/port8.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port9.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div> 
                              <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port10.jpg" alt="">
+                                     <img src="./assets/img/port10.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port12.jpg" alt="">
+                                     <img src="./assets/img/port12.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div> 
@@ -374,41 +617,107 @@
                         <div class="tab-pane fade" id="marketingp" role="tabpanel" aria-labelledby="marketingp">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port13.jpg" alt="">
+                                     <img src="./assets/img/port13.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port14.jpg" alt="">
+                                     <img src="./assets/img/port14.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port15.jpg" alt="">
+                                     <img src="./assets/img/port15.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port16.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port17.jpg" alt="">
+                                     <img src="./assets/img/port16.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port17.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div> 
                              <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port18.jpg" alt="">
+                                     <img src="./assets/img/port18.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
@@ -416,33 +725,88 @@
                         <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port19.jpg" alt="">
+                                     <img src="./assets/img/port19.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port20.jpg" alt="">
+                                     <img src="./assets/img/port20.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port21.jpg" alt="">
+                                     <img src="./assets/img/port21.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port22.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port23.jpg" alt="">
+                                     <img src="./assets/img/port22.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port23.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
@@ -450,33 +814,88 @@
                         <div class="tab-pane fade" id="nature" role="tabpanel" aria-labelledby="nature">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port29.jpg" alt="">
+                                     <img src="./assets/img/port29.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port30.jpg" alt="">
+                                     <img src="./assets/img/port30.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port31.jpg" alt="">
+                                     <img src="./assets/img/port31.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port32.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port33.jpg" alt="">
+                                     <img src="./assets/img/port32.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port33.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
@@ -484,33 +903,88 @@
                         <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food">
                             <div class="cont-items-portfolio">
                                  <div class="cont-item-portfolio">
-                                     <img src="port24.jpg" alt="">
+                                     <img src="./assets/img/port24.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>12</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port25.jpg" alt="">
+                                     <img src="./assets/img/port25.jpg" alt="">
                                       <div class="cont-likes">
                                          <p>27</p>
                                      </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port26.jpg" alt="">
+                                     <img src="./assets/img/port26.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>17</p>
                                      </div>
-                                 </div>
-                                 <div class="cont-item-portfolio">
-                                     <img src="port27.jpg" alt="">
-                                     <div class="cont-likes">
-                                         <p>37</p>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                                  <div class="cont-item-portfolio">
-                                     <img src="port28.jpg" alt="">
+                                     <img src="./assets/img/port27.jpg" alt="">
+                                     <div class="cont-likes">
+                                         <p>37</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="cont-item-portfolio">
+                                     <img src="./assets/img/port28.jpg" alt="">
                                      <div class="cont-likes">
                                          <p>57</p>
+                                     </div>
+                                     <div class="cont-overlayp">
+                                         <div class="cont-info-portfolio">
+                                             <h3 class="title-portfolio">Morning view</h3>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat debitis error <span>[...]</span></p>
+                                             <div class="cont-icon-portfolio">
+                                                 <a href=""><span class="typcn typcn-th-menu"></span></a>
+                                                 <a href=""><span class="typcn typcn-camera"></span></a>
+                                                 <a href=""><span class="typcn typcn-times"></span></a>
+                                             </div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
