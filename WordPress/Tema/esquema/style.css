@@ -1,5 +1,49 @@
+/*
+Theme Name: Esquema
+Theme URI: https://wsernalaverde.github.io/prueba-esquema/
+Author: William Serna
+Author URI: https://wsernalaverde.github.io/frontend-bootcamp/
+Description: Tema creado para prueba técnica de Esquema
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one page, prueba, técnica, esquema, single page
+
+*/
+
 *{
     box-sizing: border-box;
+}
+
+/*Wordpress*/
+
+.otw-sidebar-1{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portafolio .ui-tabs-panel{
+    padding: 0 !important;
+}
+
+.vc_section{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	margin: 0 !important;
+}
+
+.vc_column_container>.vc_column-inner{
+	padding: 0 !important;
+}
+
+.wpb_content_element{
+	margin-bottom: 0 !important;
+}
+
+.vc_row{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 body{
@@ -28,12 +72,9 @@ a{
     border-bottom: 4px solid #5cc9c1;
 }
 
-.cont-img-slide img{
-    width: 100%;
-}
-
 .cont-info-slide{
     position: absolute;
+    top:0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -83,6 +124,7 @@ a{
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 0px 11px rgba(255, 255, 255, 0.32);
+    z-index: 2;
 }
 
 .cont-indicador span{
@@ -91,18 +133,25 @@ a{
     margin-top: -5px;
 }
 
+
 .btn-slide{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 3px solid;
-    padding: 17px 60px;
-    transition: 0.3s;
+    margin-top:70px !important;
 }
 
-.btn-slide:hover{
+.btn-slide button{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 3px solid !important;
+    padding: 17px 60px !important;
+    transition: 0.3s !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+.btn-slide button:hover{
     color: white;
-    background: rgba(255, 255, 255, 0.19);
+    background: rgba(255, 255, 255, 0.19) !important;
     text-decoration: none;
 }
 
@@ -170,16 +219,16 @@ a{
 }
 
 .cont-menu-services{
-    background-image: url('./bg-menu-services.jpg');
+    background-image: url('./img/bg-menu-services.jpg');
     background-size: cover;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.btn-more{
-    background-color: #164d61;
-    border-radius: 50%;
+.btn-more .vc_tta-panel-heading{
+    background-color: #164d61 !important;
+    border-radius: 50% !important;
     height: 30px;
     width: 30px;
     margin: auto;
@@ -187,6 +236,22 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 30px;
+    border: 0 !important;
+}
+
+.btn-more .vc_tta-panel-body{
+    padding: 0 !important;
+    margin: 20px 0;
+}
+
+.btn-more a{
+    padding: 3px 0 !important;
+    color: white !important;
+}
+
+.btn-more .vc_tta-controls-icon{
+    display: none !important;
 }
 
 .btn-more span{
@@ -277,7 +342,7 @@ a{
 
 .cont-panels-services{
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 70px;
 }
 
@@ -304,6 +369,8 @@ a{
 .cont-info-about{
     display: flex;
     padding: 20px 40px 100px;
+	max-width: 1140px;
+    margin: 0 auto !important;
 }
 
 .cont-date{
@@ -312,10 +379,17 @@ a{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding-right: 50px;
+    padding-right: 50px !important;
     margin-right: 50px;
     border-right: 2px solid white;
     position: relative;
+}
+
+.cont-date .wpb_wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
 }
 
 .cont-date:before{
@@ -376,7 +450,7 @@ a{
 }
 
 .cont-info-about .cont-icon span{
-    color:white;
+    color:white !important;
     font-size: 28px;
 }
 
@@ -385,21 +459,27 @@ a{
     margin-bottom: 30px;
 }
 
-.cont-menu-portafolio .nav-tabs{
-    display: flex;
+.cont-menu-portafolio .nav-tabs, .cont-menu-portafolio .wpb_tabs_nav{
+    display: flex !important;
     justify-content: center;
+    margin-bottom: 30px !important;
 }
 
 .cont-menu-portafolio .nav-tabs .nav-link{
-    color: #164d61;
-    border: 0;
+    color: #164d61 !important;
+    border: 0 !important;
+    background: transparent !important;
 }
 
-.cont-menu-portafolio .nav-tabs .nav-link.active{
+.cont-menu-portafolio .wpb_tabs_nav .ui-state-active{
+    background: transparent !important;
+}
+
+.cont-menu-portafolio .nav-tabs .nav-link.active, .cont-menu-portafolio .wpb_tabs_nav .ui-state-active a{
     color: #5cc9c1;
     font-weight: 700;
     border: 0;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid !important;
 }
 
 .cont-menu-portafolio .nav-tabs .nav-link:hover{
@@ -413,7 +493,6 @@ a{
 
 .cont-item-portfolio{
     position: relative;
-    max-width: 270px;
 }
 
 .cont-item-portfolio img{
@@ -574,9 +653,8 @@ footer{
 .cont-info-contact{
     display: flex;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 50px !important;
     width: 100%;    
-    margin-bottom: 50px;
 }
 
 .cont-item-contact{
@@ -589,7 +667,7 @@ footer{
 }
 
 .cont-info-contact .cont-icon span{
-    color: #164d61;
+    color: #164d61 !important;
     font-size: 28px;
 }
 
@@ -599,11 +677,11 @@ footer{
 
 .cont-form{
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 50px 0 100px;
 }
 
-.cont-form, .form-cta{
+.cont-form, .wpcf7{
     width: 100%;
 }
 
@@ -612,7 +690,7 @@ footer{
     margin: 15px 0;
 }
 
-.form-cta input[type="text"], .form-cta input[type="email"], .form-cta input[type="number"], textarea{
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 input[type="tel"], textarea{
     background: #164D61;
     border: 0;
     color: white;
@@ -621,13 +699,18 @@ footer{
     margin:0 10px;
 }
 
+.wpcf7 .cont-items-form span{
+	flex:1;
+	margin: 0 10px;	
+}
+
 .cont-btn-form{
     justify-content: center;
     display: flex;
     margin-top: 40px;
 }
 
-.form-cta .cont-btn-form input[type="submit"]{
+.wpcf7 .cont-btn-form input[type="submit"]{
     font-weight: 700;
     text-transform: uppercase;
     background: transparent;
@@ -639,22 +722,12 @@ footer{
     cursor: pointer;
 }
 	
-.form-cta ::placeholder{
+.wpcf7 ::placeholder{
      color: #ececec; 
 }
 
-.message-res{
-    text-align: center;
-    padding: 8px;
-    color: green;
-    border: 2px solid;
-    max-width: 300px;
-    margin: 40px auto 0;
-}
 
-.hide{
-    display: none;
-}
+/*Media queries*/
 
 @media (max-width: 990px){
    .cont-info-seccion{
@@ -677,10 +750,20 @@ footer{
     }
     .header-section{
         min-height: 480px;
-        background-image: url('./slide1.jpg')
+        background-image: url('./img/slide1.jpg')
     }
     .cont-img-slide{
       display: none;
+    }
+    .cont-panels-services .vc_column_container .wpb_text_column{
+        padding: 0 20px;
+    }
+    .cont-logo{
+        margin-top: 40px;
+    }
+    .cont-menu-portafolio .wpb_tabs_nav{
+        flex-wrap: wrap;
+        padding: 0 10px !important;
     }
 }
 
@@ -689,16 +772,22 @@ footer{
      flex-wrap: wrap;
      padding: 0 30px;
   }
-  .cont-item-contact{
+  .cont-item-contact, .wpcf7 .cont-items-form span{
       width: 100%;
       flex:initial;
+      margin: 10px;
   }
+
+  .wpcf7 .cont-items-form br{
+    display: none;
+  }
+
   .cont-items-form{
       flex-wrap: wrap;
       margin: 0;
   }
-  .form-cta input[type="text"], .form-cta input[type="email"], .form-cta input[type="number"], textarea{
-      margin: 10px 20px;
+  .wpcf7 input[type="text"],  .wpcf7 input[type="email"], .wpcf7 input[type="tel"], textarea{
+      margin: 0;
   }
   .cont-info-about{
         padding: 20px 30px 100px;
@@ -725,8 +814,8 @@ footer{
   .cont-info-slide p{
       margin: 60px 60px 30px;
   }
-  .btn-slide{
-      padding: 10px 20px;
+  .btn-slide button{
+      padding: 10px 20px !important;
   }
 }
 

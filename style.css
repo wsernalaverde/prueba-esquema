@@ -28,6 +28,10 @@ a{
     border-bottom: 4px solid #5cc9c1;
 }
 
+.cont-img-slide img{
+    width: 100%;
+}
+
 .cont-info-slide{
     position: absolute;
     text-align: center;
